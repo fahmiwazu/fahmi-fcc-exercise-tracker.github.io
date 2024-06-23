@@ -111,7 +111,7 @@ app.get('/api/users/:id/logs', async (req,res) => {
 
 
 // Database Location  
-MONGO_URI = 'mongodb+srv://fahmiwiradika:HPwwwWvrutJdUK9S@backenddb.vgtoqfs.mongodb.net/Exercise?retryWrites=true&w=majority&appName=BackendDB';
+MONGO_URI = 'mongodb+srv://<user>:<password>@backenddb.vgtoqfs.mongodb.net/<collection_name>?retryWrites=true&w=majority&appName=BackendDB';
 
 // Database Connection
 mongoose.connect(MONGO_URI)
