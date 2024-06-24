@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.use("/api/users/", userRoute);
 
 // Database Location  
-MONGO_URI = 'mongodb+srv://<user>:<password>@backenddb.vgtoqfs.mongodb.net/<collection_name>?retryWrites=true&w=majority&appName=BackendDB';
+const MONGO_URI = process.env.DB;
 
 // Database Connection
 mongoose.connect(MONGO_URI)
